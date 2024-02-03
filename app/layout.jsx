@@ -6,7 +6,7 @@ export const metadata = {
   apple:"/assets/images/logo.png",
   title: "AlgoBlog",
   description:
-    "Share your lifestyle, fashion, idea, morden, tech, science, art, music, food, travel, sport, politics, business, education, health, entertainment, other with the world.",
+    "Share",
 };
 
 const RootLayout = ({ children }) => {

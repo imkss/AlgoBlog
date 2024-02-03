@@ -3,7 +3,6 @@ import { useState } from "react";
 import Image from "next/image";
 import { useSession } from "next-auth/react";
 import { useRouter, usePathname } from "next/navigation";
-import { set } from "mongoose";
 
 const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const [copied, setCopied] = useState("");
@@ -13,9 +12,9 @@ const PromptCard = ({ post, handleTagClick, handleEdit, handleDelete }) => {
   const handleCopy = () => {
     setCopied(post.prompt);
     navigator.clipboard.writeText(post.prompt);
-    // setTimeout(() => {
-    //   setCopied("");
-    // },10000);
+    setTimeout(() => {
+      setCopied("");
+    },10000);
   };
 
   return (
